@@ -48,13 +48,28 @@ body {
 }
 
 .hero__image__container {
+    display: flex;
+    align-items: center;
     width: 100%;
+    position: relative;
 }
 
 .hero__image{
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 25px 50px -12px rgb( 0 0 0 / 25%);
+}
+.logo__image {
+    position: absolute;
+    margin-top: 35px;
+    width: 100%;
+    z-index: -3;
+}
+.logo__shape {
+    position: absolute;
+    margin-top: 35px;
+    width: 100%;
+    z-index: -3;
 }
 
 .hero__text {
@@ -130,6 +145,12 @@ body {
     .explore__menu__container {
         position: relative;
     }
+    .logo__image { 
+        margin-top: 20px;  
+    }
+    .logo__shape {
+        margin-top: 20px;  
+    }
 }
 
 @media (min-width: 1024px) {
@@ -162,5 +183,11 @@ body {
 
     .explore__menu__text {
         font-size: 48px;
+    }
+    .logo__image {
+        margin-top: 50px;
+    }
+    .logo__shape {
+        margin-top: 50px;
     }
 }
