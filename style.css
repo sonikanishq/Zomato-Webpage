@@ -41,6 +41,9 @@ body {
     cursor: pointer;
 }
 
+.hero__container {
+    margin-bottom: 50px;
+}
 .container {
     max-width: 100%;
     padding: 20px;
@@ -84,6 +87,8 @@ body {
 }
 .food__card {
     background-color: #f9f9f9;
+    margin-bottom: 20px;
+    box-shadow: 0 25px 50px -12px rgb( 0 0 0 / 25%);
 }
 
 .food__card__image__container {
@@ -98,9 +103,60 @@ body {
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 800;
     color: #1d2557;
+}
+
+.explore__resturants__container {
+    margin-top: 50px;
+}
+.explore__resturants__text {
+    color: #1d3557;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.resturants__image1{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.image1 {
+    width: 45%;
+    height: 0%;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgb( 0 0 0 / 25%);
+}
+
+.image2 {
+    width: 50%;
+    height: 0%;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgb( 0 0 0 / 25%);
+}
+.resturants__image2{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.image3 {
+    width: 50%;
+    height: 0%;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgb( 0 0 0 / 25%);
+}
+.image4 {
+    width: 45%;
+    height: 0%;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgb( 0 0 0 / 25%);
 }
 
 @media (min-width: 768px) {
@@ -127,6 +183,9 @@ body {
         align-items: center;
         
     }
+    .explore__menu__container {
+        margin-top: 20%;
+    }
     .explore__menu__gradient__bg{
         position: absolute;
         top: 0;
@@ -151,6 +210,31 @@ body {
     .logo__shape {
         margin-top: 20px;  
     }
+    .explore__resturants__container {
+        margin-top: 25%;
+        position: relative;
+    }
+    .explore__resturant__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background-image: linear-gradient(
+          to right,
+          #ff512f 0%,
+          #ff512f 51%,
+          #dd2476 100%
+        );
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
+    .explore__resturants__text {
+        margin-bottom: 50px;
+        font-size: 30px;
+        text-align: center;
+    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -189,5 +273,8 @@ body {
     }
     .logo__shape {
         margin-top: 50px;
+    }
+    .explore__resturants__text {
+        font-size: 50px;
     }
 }
