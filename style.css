@@ -21,6 +21,13 @@ body {
 
 .navbar__logo {
     width: 100%;
+    animation: 2s abc;
+}
+@keyframes abc {
+    100% {
+        transform: rotate(360deg);
+    }
+    
 }
 
 .button__primary {
@@ -33,9 +40,13 @@ body {
     color: #fff;
     border: none;
     padding: 12px;
-    border-radius: 6px;
+    border-radius: 6px; animation: 2s abc;
 }
-
+@keyframes abc {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .button__primary:hover {
     border: 2px solid #ff6767;
     cursor: pointer;
@@ -158,6 +169,59 @@ body {
     border-radius: 6px;
     box-shadow: 0 25px 50px -12px rgb( 0 0 0 / 25%);
 }
+.explore__update {
+    margin-top: 50px;
+}
+.updated {
+    color: #1d3557;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.forms {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#e_mail {
+    border-color: #dd2476;
+    background-color: #fcedf0;
+    padding: 8px;
+    border-radius: 6px;
+}
+.explore__end {
+    margin-top: 50px;
+}
+.last__image {
+    width: 100%;
+    border-radius: 8px;
+}
+.stylings {
+    border-radius: 10px 10px 0 0;
+    display: block;
+    align-items: center;
+    background-image: linear-gradient(
+          to right,
+          #ff512f 0%,
+          #ff512f 51%,
+          #dd2476 100%
+        );
+    z-index: -3;
+}
+.logo {
+    text-align: center;
+    width: 100%;
+    filter: brightness(0) invert(1);
+}
+.footer__logo {
+    width:50%;
+}
+.list {
+    text-align: center;
+    list-style: none;
+    color: white;
+}
 
 @media (min-width: 768px) {
     .explore__menu__lists {
@@ -220,7 +284,12 @@ body {
         left: 0;
         width: 100%;
         height: 120%;
-        background-color: white;
+        background-image: linear-gradient(
+          to right,
+          #ff512f 0%,
+          #ff512f 51%,
+          #dd2476 100%
+        );
         z-index: -3;
         transform: skewY(-5deg);
     }
@@ -228,6 +297,30 @@ body {
         margin-bottom: 50px;
         font-size: 30px;
         text-align: center;
+    }
+    .explore__update {
+        margin-top: 30%;
+    }
+    .updated {
+        font-size: 30px;
+    }
+    .forms {
+        justify-content: center;
+        gap: 10px;
+    }
+    .stylings {
+        display: flex;
+        
+        margin: 0;
+    }
+    .logo {
+        text-align: left;
+    }
+    .list{
+        position: absolute;
+        font-size: 20px;
+        right: 8%;
+        
     }
     
 }
@@ -271,5 +364,20 @@ body {
     }
     .explore__resturants__text {
         font-size: 50px;
+    }
+    .updated {
+        font-size: 50px;
+    }
+    .forms {
+        justify-content: center;
+        gap: 20px;
+    }
+    #e_mail {
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 6px;
+    }
+    .logo {
+        width: 30%;
     }
 }
